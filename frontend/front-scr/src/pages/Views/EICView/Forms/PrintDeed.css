@@ -1,0 +1,25 @@
+.print {
+  size: A4;
+  margin: 10mm;
+  border: 1px solid black;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .cell {
+    width: 50%;
+    height: 20%;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .image-circle{
+    border-radius: 50%;
+  }

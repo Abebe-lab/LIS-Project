@@ -1,0 +1,8 @@
+/.env
+/node_modules
+/temp
+jic
+/requests.rest
+/uploads
+/dist
+/build

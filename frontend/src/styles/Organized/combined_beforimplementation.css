@@ -1,0 +1,596 @@
+
+/*============================cleaned app.css====================*/
+
+/*============================cleaned index.css====================*/
+/* Base styles */
+* {
+    font-family: 'Uniform', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Floating forms */
+  .floating-form {
+    position: fixed;
+    background: whitesmoke;
+    border-radius: 0.25rem;
+    padding: 20px;
+    z-index: 1;
+    vertical-align: middle;
+  }
+  
+  .floating-form-left {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    bottom: 10%;
+  }
+  
+  .floating-form {
+    top: 20%;
+    right: 20px;
+    width: 300px;
+  }
+  
+  .floating-two-column {
+    top: 15%;
+    left: 20vw;
+    width: 40vw;
+    bottom: 10%;
+  }
+  
+  /* Floating form elements */
+  .floating-two-column label {
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    text-align: right;
+  }
+  
+  .floating-two-column div,
+  .floating-two-column input,
+  .floating-two-column select,
+  .floating-two-column textarea {
+    margin: 10px 0; /* Adjust spacing as needed */
+  }
+  
+  .floating-two-column input,
+  .floating-two-column select,
+  .floating-two-column textarea {
+    margin-left: 205px; /* Adjust based on label width */
+  }
+  
+  textarea {
+    width: 100%;
+  }
+  
+  /* Form titles */
+  .form-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .form-upper-Title {
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  .decorated-button,
+  .form-button {
+    border-radius: 0.25rem;
+    width: 100%;
+  }
+  
+  /* Text decorations */
+  .neutral {
+    text-decoration-color: grey;
+  }
+  
+  .warning {
+    text-decoration-color: yellow;
+  }
+  
+  .success {
+    text-decoration-color: green;
+  }
+  
+  .error {
+    text-decoration-color: red;
+  }
+  
+/*============================cleaned sample-form.css====================*/
+/* Base styles */
+body {
+    font-family: 'Uniform', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0; /* Remove default margin from body */
+  }
+  
+  /* Floating forms */
+  .floating-form {
+    position: fixed;
+    background: whitesmoke;
+    border-radius: 0.25rem;
+    padding: 20px;
+    z-index: 1;
+    vertical-align: middle;
+  }
+  
+  .floating-form-left {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    bottom: 10%;
+  }
+  
+  .floating-form.right {  /* Add class for right positioning */
+    top: 15%;
+    right: 20px;
+    width: 300px;
+  }
+  
+  .floating-two-column {
+    top: 15%;
+    left: 20vw;
+    width: 40vw;
+    bottom: 10%;
+  }
+  
+  /* Floating form elements */
+  .floating-two-column label {
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    text-align: right;
+  }
+  
+  .floating-two-column .form-element { /* Group form elements */
+    margin: 10px 0; /* Adjust spacing as needed */
+  }
+  
+  .floating-two-column input,
+  .floating-two-column select,
+  .floating-two-column textarea {
+    margin-left: 205px; /* Adjust based on label width */
+    width: 100%; /* Consistent width for inputs */
+  }
+  
+  /* Form titles */
+  .form-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .form-upper-Title {
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  .decorated-button,
+  .form-button {
+    border-radius: 0.25rem;
+    width: 100%;  /* Consistent width for buttons */
+  }
+  
+  /* Text decorations */
+  .neutral {
+    text-decoration-color: grey;
+  }
+  
+  .warning {
+    text-decoration-color: yellow;
+  }
+  
+  .success {
+    text-decoration-color: green;
+  }
+  
+  .error {
+    text-decoration-color: red;
+  }
+
+  /*============================cleaned sample-menu.css====================*/
+  /* Menu Styles */
+.select-menu {
+    cursor: pointer;
+    position: fixed;
+    z-index: 101;
+    left: 15px;
+    top: 25px;
+    padding: 0;
+    height: 65px; /* Adjust height as needed */
+  }
+  
+  .menu-label {
+    color: white;
+  }
+  
+  /* Vertical Navigation */
+  .vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+    display: none; /* Show/hide behavior handled with JS */
+  }
+  
+  .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+    background-color: #f5f5f5;
+    height: 100%;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger-menu {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 102; /* Ensure it's above the menu */
+    cursor: pointer;
+  }
+  
+  .hamburger-menu.active {
+    display: block; /* Show when active */
+  }
+  
+  .hamburger-menu span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+  }
+  
+  /* Media Queries */
+  @media (min-width: 600px) {
+    .vertical-nav {
+      display: block; /* Show menu for larger screens */
+    }
+  
+    .hamburger-menu {
+      display: none; /* Hide hamburger menu for larger screens */
+    }
+  
+    #sidebar { /* Assuming #sidebar targets the vertical-nav element */
+      margin-left: 0; /* Reset margin for larger screens */
+    }
+  
+    #content {
+      width: calc(100% - 17rem); /* Adjust width for larger screens */
+      margin-left: 17rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #sidebar { /* Assuming #sidebar targets the vertical-nav element */
+      margin-left: -17rem; /* Initial state for smaller screens */
+    }
+  
+    #sidebar.active {
+      margin-left: 0;
+    }
+  
+    #content {
+      width: 100%;
+      margin: 0;
+      height: 100%;
+      padding: 0%; /* Adjust padding as needed for small screens */
+    }
+  
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+  }
+  /*============================cleaned menu.css i====================*/
+/* Menu Styles */
+.menu {
+    display: grid;
+    position: fixed;
+    width: 17rem;
+    height: 100vh;
+    border-radius: 0 50px 50px 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+    background-color: #42a147;
+    z-index: 10;
+  }
+  
+  .menu.hidden {
+    width: 60px;
+  }
+  
+  /* Menu Content */
+  .menu-title-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+  }
+  
+  .menu-logo {
+    width: 40px; /* Adjust logo size as needed */
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .menu-title {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+  
+  .menu-department {
+    padding: 10px;
+    color: white;
+  }
+  
+  .menu-item-container {
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+  }
+  
+  .menu-item-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .menu-item-container li {
+    margin-bottom: 10px;
+    flex: 1;
+  }
+  
+  .menu.hidden .menu-title,
+  .menu.hidden .menu-department,
+  .menu.hidden .menu-item-container {
+    display: none; /* Combine hidden state styles */
+  }
+  
+  .menu-item {
+    font-weight: lighter;
+    font-size: small;
+    background-color: inherit;
+    padding: 5px;
+  }
+  
+  .menu-item-element {
+    position: relative;
+    background-color: inherit;
+    list-style-type: none;
+    border-radius: 50px;
+  }
+  
+  /* Main Content */
+  .page-content {
+    transition: all 0.4s;
+    background-color: #f5f5f5;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .page-content.menu-visible {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+  }
+  
+  .page-content.menu-hidden {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    .menu {
+      position: absolute;
+      margin-left: -17rem;
+      width: 60px;
+      display: none; /* Show/hide behavior with JS */
+    }
+  
+    .menu-title-container {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+  
+    .page-content.menu-hidden {
+      width: 100%;
+      margin-left: 60px;
+    }
+  }  
+/*============================cleaned multistep-form.css====================*/
+.page-number {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.next-back-button {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+/*======================== DACDashboard.css ====================*/
+/* Global Styles */
+body {
+    font-family: 'Uniform', sans-serif;
+  }
+  
+  /* Dashboard Layout */
+  .container1 {
+    width: calc(100vw - 17rem);
+    height: 100vh;
+    background-color: #FAF9FF;
+  }
+  
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust columns as needed */
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr)); /* Flexible row heights */
+    gap: 10px;
+    height: 100vh;
+  }
+  /* Grid Areas (consider using for complex layouts) */
+.grid-title-area { /* Example area name */
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .dashboard-welcome {
+    font-family: 'Uniform', sans-serif; /* Consistent font family */
+  font-size: 16px; /* Adjust font size */
+  color: #737373;
+    grid-column: span 3; /* Use span for full column */
+    grid-row: 3;
+  }
+
+  .dashboard-title {
+    font-family: "Uniform", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #000000;
+    grid-column: span 3; /* Use span for full column */
+    grid-row: 2;
+  }
+  .grid-empty1 {
+    grid-column: span 3; /* Use span for full column */
+    grid-row: 1;
+  }
+  
+  .grid-empty2 {
+    grid-column: span 3; /* Use span for full column */
+    grid-row: 4;
+  }
+  
+  .grid-first-cards {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    grid-row: 5;
+  }
+  
+  .grid-empty3 {
+    grid-column: span 3; /* Use span for full column */
+    grid-row: 6;
+  }
+  
+  .grid-second-title {
+    grid-column: span 3; /* Use span for full column */
+    grid-row: 7;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: auto;
+    text-align: start;
+  }
+  
+  .grid-second-cards {
+    display: flex;
+    gap: 10px;
+    grid-row: 8;
+  }
+  
+  .grid-item { /* Combine item styles */
+    grid-column-start: span 1; /* Adjust as needed */
+    grid-row: 8;
+  }
+  
+  .grid-empty4 {
+    grid-column: span 3; /* Use span for full column */
+    grid-row: 9;
+  }
+  
+  /* Building Permit Form Styles */
+  .building-permit-form {
+    padding: 20px;
+    margin-left: 17rem;
+  }
+  
+  .building-permit-form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .building-permit-form input {
+    width: 100%;
+  }
+  
+  .tab-content {
+    margin-top: 10px;
+  }
+  
+  .building-permit-form .MuiTextField-root {
+    margin-bottom: 5px;
+  }
+  
+  .building-permit-form .MuiFormControl-root {
+    margin-bottom: 5px;
+  }
+  
+  .building-permit-form .MuiButton-contained {
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 600px) {
+    .building-permit-form .MuiGrid-container {
+      flex-direction: column;
+    }
+  
+    .building-permit-form .MuiGrid-item {
+      margin-bottom: 15px;
+    }
+  }
+  /**------------------BUILDING PERMIT STYLES END*/
+/* Make the grid vertical when it starts to be covered */
+@media (max-width: 768px) {
+    .dashboard-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-flow: row;   
+    }
+  }

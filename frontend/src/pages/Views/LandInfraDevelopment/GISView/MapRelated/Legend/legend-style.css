@@ -1,0 +1,21 @@
+
+.legend {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.legend input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.legend span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}

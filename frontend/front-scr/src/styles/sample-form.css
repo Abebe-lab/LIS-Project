@@ -1,0 +1,120 @@
+/* Base styles */
+* {
+	font-family: 'Uniform', sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	box-sizing: border-box;
+  }
+.label-shrink-text{
+	font-size: 12px;
+	white-space: nowrap;
+}
+.floating-form-left {
+	top: 20%;
+	position: fixed;
+	left: 50%;
+	background: whitesmoke;
+	border-radius: 0.25rem;
+	height: fit-content;
+	padding: 20px;
+	bottom: 10%;
+	z-index: 1;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+.floating-two-column{
+	top: 15%;
+	left: 20vw;
+	position: fixed;
+	background: whitesmoke;
+	border-radius: 0.25rem;
+	width: 40vw;
+	height: fit-content;
+	padding: 20px;
+	bottom: 10%;
+	z-index: 1;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+.floating-two-column label {
+	display: inline-block;
+	width: 200px; /* Adjust width as needed */
+	text-align: right;
+  }
+  .floating-two-column div {
+	margin: 10px;
+  }
+  
+  .floating-two-column input,
+  .floating-two-column select,
+  .floating-two-column textarea {
+	margin-left: 10px; /* Adjust spacing as needed */
+  }
+.floating-form {
+	top: 15%;
+	right: 20px;
+	position: fixed;
+	background: whitesmoke;
+	border-radius: 0.25rem;
+	width: 300px;
+	height: fit-content;
+	padding: 20px;
+	bottom: 10%;
+	z-index: 1;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+.floating-form-edit {
+	top: 25%;
+	right: 20px;
+	position: fixed;
+	background: whitesmoke;
+	border-radius: 0.25rem;
+	width: 300px;
+	height: fit-content;
+	padding: 20px;
+	bottom: 10%;
+	z-index: 1;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+.form-title {
+	font-size: 24px;
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+.form-upper-Title{
+	font-size: 32px;
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+/*input {
+	width: inherit;
+	height: 25px;
+}*/
+textarea {
+	width: 100%;
+}
+.decorated-button {
+	border-radius: 10px;
+	width: 100%;
+}
+.form-button {
+	border-radius: 0.25rem;
+}
+.neutral {
+	text-decoration-color: grey;
+}
+.warning {
+	text-decoration-color: yellow;
+}
+.success {
+	text-decoration-color: green;
+}
+.error {
+	text-decoration-color: red;
+}

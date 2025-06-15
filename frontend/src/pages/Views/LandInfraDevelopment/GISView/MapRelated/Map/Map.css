@@ -1,0 +1,91 @@
+.ol-map {
+  min-width: 600px;
+  min-height: 500px;
+  margin: 50px;
+  height: 100%;
+  width: 100%;
+}
+.ol-expanded {
+  left: 19px;
+}
+.ol-control {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  padding: 2px;
+  z-index: 1000;
+}
+/*LAYER OR LAYER SWITCHER CONTROL*/
+.layer-switcher {
+  top: 54px; /* Prevent overlap with ZoomControl */
+  left: 10px;
+}
+.layer-switcher ul{
+  list-style-type: none; /* Remove bullets */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+.layer-switcher ul li {
+  padding: 5px 10px; /* Adjust spacing for clarity */
+}
+.ol-layerswitcher {
+  top: 54px; /* Prevent overlap with ZoomControl */
+  left: 10px;
+}
+.ol-layerswitcher ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+  }
+  
+  /* Optionally style list items for better appearance */
+  .ol-layerswitcher ul li {
+    padding: 5px 10px; /* Adjust spacing for clarity */
+  }
+.ol-scale-bar {
+  bottom: 40px; /* Anchored to the bottom of the map container */
+  z-index: 1000;
+}
+.ol-zoom {
+  top: 10px;
+  left: 10px;
+}
+
+.ol-attribution {
+  bottom: 10px; /* Anchored to the bottom */
+  right: 10px; /* On the right side */
+}
+
+.ol-full-screen {
+  top: 0.5em;
+  right: 0.5em;
+}
+.north-arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.arrow-up, .arrow-down {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.arrow-up {
+  border-bottom: 15px solid black;
+  top: 0;
+  left: 5px;
+}
+
+.arrow-down {
+  border-top: 15px solid black;
+  bottom: 0;
+  left: 5px;
+  transform: rotate(180deg);
+}

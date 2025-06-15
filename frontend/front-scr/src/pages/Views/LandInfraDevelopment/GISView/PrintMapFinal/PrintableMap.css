@@ -1,0 +1,117 @@
+/* PrintableMap.css */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .ol-map,
+  .ol-map * {
+    visibility: visible;
+  }
+  .ol-map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important; /* Important to override inline styles in print mode */
+    height: 100% !important; /* Important to override inline styles in print mode */
+    border: none !important; /* Remove border in print if any */
+    z-index: 1000;
+  }
+
+  .ol-legend {
+    position: fixed !important; /* Fixed position in print */
+    bottom: 10mm;
+    left: 10mm;
+    border: 1px solid black; /* Example border for legend in print */
+    padding: 8mm;
+    background-color: rgba(255, 255, 255, 0.9) !important; /* Ensure legend background is visible */
+  }
+
+  .ol-scale-line {
+    position: fixed !important; /* Fixed position for scale line in print */
+    bottom: 10mm;
+    left: auto;
+    right: 10mm;
+    background: white !important; /* Ensure scale line background is visible */
+    border: 1px solid black !important;
+    border-top: none !important;
+  }
+
+  .controls-container,
+  .controls-container * {
+    display: none !important;
+  }
+
+  .print-mode .ol-map {
+    border: none !important; /* Remove border during actual print */
+  }
+  /* Ensure Legend and Title are visible in print */
+  .print-mode .legend-container, /* If you have a legend container class */
+    .print-mode .map-title-display {
+    display: block !important;
+  }
+  .print-mode .legend-container .MuiPaper-root {
+    display: block !important;
+  }
+
+  .print-mode .legend-container .MuiPaper-root ul {
+    display: block !important; /* or visibility: visible !important; */
+  }
+}
+
+.ol-map {
+  background: white; /* Ensure map background is white for print */
+}
+
+.ol-scale-line {
+  background: white; /* Scale line background */
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+  padding: 2px 5px;
+  font-size: 10px;
+  text-shadow: 0 0 2px white; /* Text shadow for better readability */
+  -webkit-print-color-adjust: exact; /* Ensure accurate colors in print */
+  color-adjust: exact;
+}
+
+.ol-legend {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.ol-legend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ol-legend li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.ol-legend li span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+}
+
+.ol-northarrow {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  pointer-events: none; /* Ensure it doesn't interfere with map interactions */
+}

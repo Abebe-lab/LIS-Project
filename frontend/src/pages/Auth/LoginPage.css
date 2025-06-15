@@ -1,0 +1,175 @@
+:root {
+	--background-color: #faf9ff;
+	--diabled-text-color: #828282;
+	--button-text-color: #ffffff;
+	--button-backgrond-color: #429d46;
+	--forget-text-color: #302cf4;
+	--light-black: #333333;
+}
+* {
+	font-family: "Uniform", sans-serif;
+	font-style: normal;
+}
+/* layout */
+body {
+	display: flexbox;
+	place-items: center;
+	justify-items: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vh;
+	background-color: var(--button-text-color);
+}
+.ipdc-logo {
+	position: absolute;
+	float: left;
+	left: 24px;
+	top: 24px;
+	width: 440px;
+	height: 185px;
+	height: 100%;
+	background: url("../../assets/image/login/ipdc_logo-transparent.png") no-repeat;
+	z-index: 2;
+}
+.login-container {
+	display: flex;
+	border-radius: 50px;
+	background-color: var(--background-color);
+	height: 98vh;
+	width: 98vw;
+}
+.login-left {
+	width: 60%;
+	height: 100%;
+	overflow: hidden;
+	background-color: var(--background-color);
+	clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+	filter: drop-shadow(15px 0px 46px red);
+	/*box-shadow: 15px 0px 46px rgba(0, 0, 0, 0.25);  */
+	/* filter: drop-shadow(15px 0px 46px rgba(0, 0, 0, 0.25));*/
+	/*transform: rotate(12deg);*/
+}
+.login-left-picture {
+	width: 100%;
+	height: 100%;
+	align-content: end;
+	background: url("../../assets/image/login/park_img.jpg");
+
+	background-color: var(--background-color);
+}
+.login-right {
+	display: flexbox;
+	padding-top: 10%;
+	padding-right: 10%;
+	flex-direction: row;
+	width: 40%;
+	background-color: var(--background-color);
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+}
+.login-title-header {
+	/* Title header */
+	/* Login_title */
+	width: 100%;
+	height: 50px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 2rem;
+	color: var(--light-black);
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+/* title_Line */
+.title-line {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 0;
+	border: 3px solid var(--button-backgrond-color);
+	margin-bottom: 40px;
+	margin-left: 42%;
+}
+
+/* username input */
+.username-input {
+	width: 100%;
+	font-weight: 35px;
+	line-height: 30px;
+	background-color: var(--background-color);
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid var(--diabled-text-color);
+	margin-bottom: 10px;
+	text-transform: none;
+}
+.forget-password {
+	/* Forgot Password? */
+	width: 100%;
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 16px;
+	margin-bottom: 40px;
+    margin-left: 10px;
+}
+.login-button {
+	/* button */
+	width: 100%;
+	height: 50px;
+	vertical-align: middle;
+	background: var(--button-backgrond-color);
+	border-radius: 70px;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 40px;
+	color: var(--button-text-color);
+	cursor: pointer;
+	z-index: 100;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+	.login-left {
+		display: none; /* Hide left section on small screens */
+	}
+
+	.login-right {
+		width: 100%; /* Expand right section to fill screen */
+        height: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+		margin: 0;
+		bottom: 5%;
+	}
+
+	.ipdc-logo {
+		position: absolute;
+		margin-bottom: 20px; /* Add space between logo and content */
+		left: 50%;
+		transform: translateX(-50%);
+		height: fit-content;
+	}
+}
+@media (max-height: 500px) {
+	.login-left {
+		display: none; /* Hide left section on small screens */
+	}
+
+	.login-right {
+		width: 100%; /* Expand right section to fill screen */
+		padding-left: 10%;
+		padding-right: 10%;
+        border-radius: 48px;
+    }
+    .login-container{
+        display: block;
+        width: 90%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .login-button{
+        margin-bottom: 20%;
+    }
+}

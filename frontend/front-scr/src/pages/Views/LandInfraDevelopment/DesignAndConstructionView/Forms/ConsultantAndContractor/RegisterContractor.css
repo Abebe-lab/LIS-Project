@@ -1,0 +1,61 @@
+.contractor-registration-container {
+  width: 500px; /* Adjust width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex; /* Make form-group a flex container */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 5px;
+}
+.form-group label {
+  margin-right: 10px; /* Add space between label and input */
+  width: 25%; /* Label takes 25% of the line */
+  text-align: right; /* Align label to the right */
+}
+
+.form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  flex: 1;
+}
+.form-group  select{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  height: 100%;
+  }
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Blue color */
+  color: white;
+}

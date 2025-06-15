@@ -1,0 +1,30 @@
+/* Base styles */
+:root {
+	--primary: #238ebc;
+	--neutral: rgba(128, 128, 128, 0.699);
+	--secondary: #a1cc9c;
+	--text-primary: navy;
+}
+body {
+    font-family: 'Uniform', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0; 
+  }
+/* Text decorations */
+.neutral {
+    text-decoration-color: grey;
+  }
+  
+  .warning {
+    text-decoration-color: yellow;
+  }
+  
+  .success {
+    text-decoration-color: green;
+  }
+  
+  .error {
+    text-decoration-color: red;
+  }  

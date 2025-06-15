@@ -1,0 +1,13 @@
+.search-title{
+    color: #000000;
+    font-size: medium;
+    letter-spacing: 2;
+    vertical-align: middle;
+    font-weight:600;
+    height: 34px;
+}
+.search-input-style{
+    border-radius: 12px;
+    height: 34px;
+    border-color:  rgba(90,87,255, 0.1) ;  
+}

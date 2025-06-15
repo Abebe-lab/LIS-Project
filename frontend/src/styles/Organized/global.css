@@ -1,0 +1,103 @@
+/* Base styles */
+* {
+    font-family: 'Uniform', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Floating forms */
+  .floating-form {
+    position: fixed;
+    background: whitesmoke;
+    border-radius: 0.25rem;
+    padding: 20px;
+    z-index: 1;
+    vertical-align: middle;
+  }
+  
+  .floating-form-left {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    bottom: 10%;
+  }
+  
+  .floating-form {
+    top: 20%;
+    right: 20px;
+    width: 300px;
+  }
+  
+  .floating-two-column {
+    top: 15%;
+    left: 20vw;
+    width: 40vw;
+    bottom: 10%;
+  }
+  
+  /* Floating form elements */
+  .floating-two-column label {
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    text-align: right;
+  }
+  
+  .floating-two-column div,
+  .floating-two-column input,
+  .floating-two-column select,
+  .floating-two-column textarea {
+    margin: 10px 0; /* Adjust spacing as needed */
+  }
+  
+  .floating-two-column input,
+  .floating-two-column select,
+  .floating-two-column textarea {
+    margin-left: 205px; /* Adjust based on label width */
+  }
+  
+  textarea {
+    width: 100%;
+  }
+  
+  /* Form titles */
+  .form-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .form-upper-Title {
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  .decorated-button,
+  .form-button {
+    border-radius: 0.25rem;
+    width: 100%;
+  }
+  
+  /* Text decorations */
+  .neutral {
+    text-decoration-color: grey;
+  }
+  
+  .warning {
+    text-decoration-color: yellow;
+  }
+  
+  .success {
+    text-decoration-color: green;
+  }
+  
+  .error {
+    text-decoration-color: red;
+  }
+  
